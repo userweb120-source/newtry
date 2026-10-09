@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raafat Agha</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1c1b19;--mut:#6b675f;--card:#fff;--bd:#e4e0d6;--ac:#c2410c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14130f;--fg:#efece4;--mut:#a29d90;--card:#1d1b16;--bd:#322f27;--ac:#fb923c}}
+:root[data-theme="dark"]{--bg:#14130f;--fg:#efece4;--mut:#a29d90;--card:#1d1b16;--bd:#322f27;--ac:#fb923c}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 Georgia,"Times New Roman",serif}
+a{color:var(--ac)}h1,h2,h3,nav,.sans{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--bd)}
+nav{max-width:960px;margin:auto;display:flex;gap:18px;align-items:center;padding:12px 20px;font-size:14px;overflow-x:auto}
+nav a{color:var(--mut);text-decoration:none;white-space:nowrap}nav a.on,nav a:hover{color:var(--fg)}nav .sp{flex:1}
+section{max-width:960px;margin:auto;padding:72px 20px 24px}
+h1{font-size:clamp(40px,8vw,76px);margin:8px 0;line-height:1.05}h2{font-size:32px;margin:0 0 20px}h3{font-size:20px;margin:28px 0 8px}
+.hero{display:grid;grid-template-columns:1fr 220px;gap:32px;align-items:center}
+.avatar{position:relative;overflow:hidden;width:220px;height:220px;border-radius:50%;background:var(--ac);color:#fff;display:grid;place-items:center;font:700 72px system-ui}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.tags span,.pill{border:1px solid var(--bd);border-radius:99px;padding:3px 12px;font:13px system-ui;color:var(--mut)}
+.avatar img,.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.btn{display:inline-block;padding:10px 20px;border-radius:8px;background:var(--fg);color:var(--bg);text-decoration:none;font:600 15px system-ui;border:0;cursor:pointer}.btn.o{background:none;color:var(--fg);border:1px solid var(--bd)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px}.facts b{display:block;font:700 26px system-ui;color:var(--ac)}
+.tl{border-inline-start:2px solid var(--bd);padding-inline-start:20px;margin-top:20px}.tl .card{margin:0 0 16px}
+.st{font:600 12px system-ui;padding:2px 10px;border-radius:99px;border:1px solid var(--bd)}.st.Passed{color:var(--mut)}.st.Tried{color:#b45309}.st.Running{color:#15803d}
+.yr{font:13px system-ui;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.ph{position:relative;overflow:hidden;height:110px;border-radius:8px;background:linear-gradient(135deg,var(--ac),var(--bd));margin-bottom:10px}
+.widget{font:15px system-ui}.widget input{padding:8px;border:1px solid var(--bd);border-radius:6px;background:var(--bg);color:var(--fg);width:100%}
+form{display:grid;gap:10px;max-width:520px}form input,form textarea{padding:10px;border:1px solid var(--bd);border-radius:8px;background:var(--card);color:var(--fg);font:inherit}
+.err{color:#dc2626;font:13px system-ui;min-height:16px}
+blockquote{border-inline-start:3px solid var(--ac);margin:20px 0;padding-inline-start:16px;font-style:italic}
+footer{text-align:center;color:var(--mut);padding:48px 20px;font:13px system-ui}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.avatar{width:120px;height:120px;font-size:40px;order:-1}section{padding-top:56px}}
+</style></head><body>
+<header><nav aria-label="Primary"><a href="#home">Start</a><a href="#story">Story</a><a href="#now">Now</a><a href="#lens">Lens</a><a href="#off">Off</a><a href="#hello">Hello</a><span class="sp"></span><button class="pill" id="theme" aria-label="Toggle theme">◐</button><span class="pill" title="Arabic version not included in this build" style="opacity:.5">ع</span></nav></header>
+<main>
+<section id="home" class="hero"><div>
+<h1>Raafat Agha</h1><div class="tags" id="tags"></div>
+<p><a class="btn" href="#story">The Story</a> <a class="btn o" href="#hello">Say Hello</a></p></div><div class="avatar">RA<img src="assets/me.jpeg" alt="Raafat Agha" onerror="this.remove()"></div></section>
+<section><h2><a href="#story" style="color:inherit;text-decoration:none">Start here</a></h2>
+<p>My name is Ahmed Raafat. Most people know me as Raafat Agha.</p>
+<p>I build things, fix things, and usually end up asking why they work the way they do in the first place.</p>
+<p>I worked in trade and manufacturing before I got into technology. Tech started as curiosity, then became work, then business, and eventually a way I think about problems in general.</p>
+<p>This isn’t a CV, and it isn’t here to sell you a service.</p>
+<p class="sans"><b>Location</b> Cairo · working internationally<br><b>Languages</b> Arabic, English</p>
+<p><b>Technology isn’t the goal.</b><br>It’s a tool.</p>
+<h3>A few facts</h3><div class="facts" id="facts"></div></section>
+
+<section id="story"><h2>The story</h2>
+<h3>It started downstairs</h3>
+<p>I grew up in a working-class neighborhood in Cairo, in a family that worked in trade and manufacturing. There was a workshop downstairs from our home.</p>
+<p>By the time I was around 16, I was already working with my father and uncles: buying raw plastic, following mold-making work, standing next to machines during testing and production, and eventually learning to run some of the machines myself. I also distributed products to traders and worked in sales and trade.</p>
+<p>Before I knew what ERP meant, I already knew what raw materials, machines, stock, customers, suppliers, cash in, and cash out looked like in real life.</p>
+<h3>Then I found the internet</h3>
+<p>Back when the internet meant dial-up, and my computer had 64 MB of RAM before I proudly upgraded it to 128 MB, my friends cared about games. I was stuck on something else: what was that handshake and the number that appeared when the connection started? So I started looking.</p>
+<div class="card sans" style="font-family:ui-monospace,monospace;font-size:13px">GNU nano 1.2 &nbsp; File: index.html<br>Server. IP. DNS. HTML. PHP.</div>
+<p>One small question opened an entire world. I learned domains, hosting, and website building, and yes, I used FrontPage too. Then I stumbled into open source and free software. That changed more than how I used software. It changed how I thought: open things up, understand them, question why they’re built that way, and don’t assume the current way is the only way.</p>
+<div class="card widget" id="dom"><b>Domain &amp; Hosting Desk</b>
+<div style="display:flex;gap:8px;margin:10px 0"><input id="dq" placeholder="Domain" aria-label="Domain"><button class="btn" id="dgo" type="button">Check</button></div>
+<div id="dres">Ready to look up a name</div><small>.com registration <b>$8.99</b> · Shared hosting <b>$4.99/mo</b> · No order yet · 0 sold today</small></div>
+<p>I went deeper into Linux, working with CentOS, Fedora, openSUSE, and Ubuntu, and started dealing directly with servers. Because I already had a commercial background, turning that knowledge into business felt natural. I started selling domains and hosting, then website design and development, while still working in trade and manufacturing and trying to study at the same time.</p>
+<h3>Education</h3>
+<p>After preparatory school, I went to commercial secondary school, then joined a Management Information Systems institute. I cared about accounting, management, and the subjects I could actually use, but I was never interested in being a model student.</p>
+<p>Part of the curriculum felt disconnected from the world I was already learning and working in. I learned what felt useful, but I didn’t finish university. I don’t treat that as an achievement, and I don’t treat it as something to hide. It simply happened. Self-learning and work took a bigger share of my attention.</p>
+
+<h2 style="margin-top:56px">The journey</h2>
+<div class="sans" id="flt" style="display:flex;gap:8px;flex-wrap:wrap"></div><div class="tl" id="tl"></div>
+<h3>Helping people start</h3>
+<p>I helped entrepreneurs get businesses off the ground: choosing the right tools, analyzing markets, working through business plans and Business Model Canvas, and turning a problem or idea into something that could actually be tested. I also trained young people across different Egyptian governorates on innovation and business kickoff.</p>
+<h3>YouTube</h3>
+<p>I’ve had a YouTube channel since 2020. The content has passed 4 million views, and the channel has grown beyond 10,000 subscribers. I don’t see that as a badge I need to prove anything with. It’s simply part of the public trail I’ve built over the years.</p></section>
+
+<section id="now"><h2>What I’m running now</h2>
+<p>I don’t see these projects as isolated islands. Every one of them carries something from the one before it, and each one taught me something I used in the next.</p>
+<div class="grid" id="proj"></div>
+<h3>So what do I actually do?</h3>
+<p>If you ask me what I do, the answer usually needs more than one job title. On the same day, I might be understanding a process inside a factory, fixing an ERP problem, reviewing a server, thinking through a product, or discussing a business model.</p>
+<p>I get bored by routine very quickly. My work happens to fit that flaw pretty well. The real work is understanding the problem properly and choosing the right way to solve it. Sometimes that’s software. Sometimes infrastructure. Sometimes ERP. And sometimes the right answer is not to build anything at all.</p></section>
+
+<section id="lens"><h2>A few things I try to work and live by</h2><div id="lens-list"></div>
+<div class="card widget" style="max-width:360px;margin:16px 0"><b>Ticket · 5</b><div style="margin:8px 0">Coins: <b id="coins">0</b>/5 — <span id="tmsg">Not enough</span></div><button class="btn o" type="button" id="coin">Add £1</button> <button class="btn o" type="button" id="coinr">Reset</button></div></section>
+
+<section id="off"><h2>Off</h2>
+<p>I’m social, selective, and sometimes very comfortable being alone. Contradictory? Fine.</p>
+<p>I love travel, long drives, and cars. I used to dance Latin, especially Bachata and Kizomba. I like art, theatre, and things that feel made with intention. I love cooking — a lot. With people I care about, I like eating together, and cooking together.</p>
+<p>I have an Open Water diving certification. The funny part is that I’m not a great swimmer, and I can get seriously uncomfortable when my feet can’t touch the ground… but I dive.</p>
+<p>I also love Suits, and Harvey Specter in particular stayed with me. Not because of the swagger, but because of the idea that someone can look completely composed while still being a normal human dealing with fear, pressure, failure, and problems — and keep trying to fix what breaks.</p>
+<blockquote>“Anybody can do my job, but no one can be me.”<br>— Harvey Specter, Suits</blockquote></section>
+
+<section id="hello"><h2>Say hello</h2>
+<p>It doesn’t have to be about work. Maybe you have an idea, a question, a disagreement with something I wrote, or you just want to say hi.</p>
+<p>I’m on Instagram, Facebook, and LinkedIn as agharaafat — but I’m not really a social media person, and I’m rarely active there. Email (or the form) is the surer way to reach me.</p>
+<p class="sans"><b>Email</b> <button class="pill" id="em" type="button">Show address</button><br>
+<b>YouTube</b> <a href="https://youtube.com/@raafatagha">youtube.com/@raafatagha</a><br>
+<b>Instagram</b> <a href="https://www.instagram.com/agharaafat/">@agharaafat</a><br>
+<b>Facebook</b> <a href="https://www.facebook.com/agharaafat">agharaafat</a><br>
+<b>LinkedIn</b> <a href="https://www.linkedin.com/in/agharaafat">/in/agharaafat</a></p>
+<form id="f" novalidate><input name="n" placeholder="Name" aria-label="Name"><input name="e" type="email" placeholder="Email" aria-label="Email"><textarea name="m" rows="4" placeholder="Message" aria-label="Message"></textarea><div class="err" id="err" role="alert"></div><button class="btn" type="submit">Send Message</button><small class="sans" style="color:var(--mut)">Demo only: nothing is sent.</small></form></section>
+
+<section id="notes"><h2>Notes</h2>
+<p>I don’t want this site to become a blog about one subject. I might write about ERP, software, open source, business, or something that happened in life and changed how I think. The only thing all of it has to have in common is that I wrote it.</p>
+<h3>Latest notes</h3><div class="card"><i>Quiet</i> <b>Nothing on my mind to write yet.</b> <i>When something lands, it will show up here.</i></div></section>
+</main>
+<footer>© Raafat Agha · Unofficial reconstruction · English only</footer>
+<script>
+const $=s=>document.querySelector(s);
+const tags="Builder,Systems thinker,ERP specialist,Product maker,Self-taught,Workshop-raised,Bachatero,Nervous diver,Traveler,YouTuber,Ex-restaurateur,Unfinished student".split(",");
+$("#tags").innerHTML=tags.map(t=>`<span>${t}</span>`).join("");
+$("#facts").innerHTML=[["4M+","YouTube views"],["10K+","Subscribers"],["Dial-up","Where the questions started"],["Downstairs","Workshop before the internet"]].map(f=>`<div class="card"><b>${f[0]}</b>${f[1]}</div>`).join("");
+const J=[["Nojoom Online","Passed","2014–2016","While I was still studying, I opened my first project: a computer services and maintenance center. I ran it for around two years. It was the first time I had my own place, customers, expenses, problems, and responsibility that was fully mine."],
+["Mogarrad Fekra","Passed","2015","A print and digital publishing house. We published books for a number of writers, and the project ran for roughly two years. Not everything I’ve built has been about technology."],
+["Gahzny","Passed","2015","An Arabic platform for women preparing for marriage, helping her figure out what she needed, where to get it, how, and for how much — step by step through family life and the first child."],
+["Imagine","Passed","2016–2021","Digital solutions, mainly websites and digital marketing. Over time the work moved from websites to e-commerce and then into deeper business systems."],
+["Raafat’s Corner - Dahab","Passed","2016–2017","I stepped away from screens for about a year and opened a restaurant and café in Dahab. Real operations: suppliers, staff, customers, inventory, cash, mistakes. I came back knowing software only matters if it helps real people run real businesses."],
+["ItsTask","Tried","","A freelancing platform inspired by Upwork. It didn’t make it. Building the product wasn’t enough, and marketing was a bigger problem than I managed to solve."],
+["EgyAdviser","Tried","","A directory for lawyers. The market wasn’t ready, or maybe I didn’t stay long enough. I still think both are possible."],
+["RA Solutions","Passed","2021–2026","Understand the business first, then choose the technology that helps. I specialized in ERP, especially Odoo, and Systems Cart grew into a brand for ERP support and implementation."],
+["HostingCart","Running","Since 2021","Domains, hosting, business email, and related reseller services under HostingCart.us."],
+["Jamrtech","Running","Since 2023","Founded in the United States as a separate company for building and operating SaaS and PaaS products."],
+["Systems Cart","Running","2026 →","Became a separate company. Today it’s where I focus on ERP implementation, support, and operations."]];
+let flt="All";
+function tl(){$("#tl").innerHTML=J.filter(j=>flt=="All"||j[1]==flt).map(j=>`<div class="card"><span class="st ${j[1]}">${j[1]}</span> <span class="yr">${j[2]}</span><h3 style="margin:6px 0">${j[0]}</h3><div>${j[3]}</div></div>`).join("");
+$("#flt").innerHTML=["All","Passed","Tried","Running"].map(f=>`<button class="pill" type="button" aria-pressed="${f==flt}" style="${f==flt?"background:var(--fg);color:var(--bg)":""}" data-f="${f}">${f}</button>`).join("");}
+$("#flt").onclick=e=>{if(e.target.dataset.f){flt=e.target.dataset.f;tl()}};tl();
+$("#proj").innerHTML=[["Company","2021-01-05","Systems Cart","Implementation and support","https://systemscart.com"],["Company","2023-10-26","Jamrtech","SaaS / PaaS solutions","https://jamrtech.com"],["Product","2026-07-03","Soviez ERP","ERP / PaaS","https://www.soviez.com"],["Product","2021-06-14","HostingCart","Infrastructure","https://hostingcart.us"],["Product","2025-03-16","aQRMenu","SaaS","https://aqrmenu.com"]].map(p=>`<a class="card" href="${p[4]}" style="text-decoration:none;color:inherit"><div class="ph"><img src="assets/projects/${p[2].toLowerCase().replace(/ erp$/,'').replace(/\s/g,'')}.jpg" alt="" loading="lazy" onerror="this.remove()"></div><span class="yr">${p[0]} · ${p[1]}</span><h3 style="margin:4px 0">${p[2]}</h3>${p[3]}</a>`).join("");
+const L=[["Do it properly","I don’t like the “just get it done” mindset. I try to do things properly from the start and look for reliable solutions that can keep working for a long time, without being loyal to a tool just because I know it."],
+["Have fun and earn money","I choose my clients and my projects. I don’t take projects just for the money, and I don’t work for free. I want to believe in what I’m doing, enjoy doing it, and get paid well for it."],
+["Money is a tool and a metric","My father once told me: “If the metro ticket costs five pounds and you only have four, you’re not getting on.” Money isn’t the point. It gives you choices, and in business it’s also a metric. A good story is not a metric."],
+["Freedom is not being forced","Freedom isn’t doing whatever you want. It’s not being forced to take work you hate because you need the money. It’s having enough room to say no and live with the consequences."],
+["Failure is normal. Probably necessary.","If you’ve never failed, you probably haven’t tried enough things whose outcome wasn’t already obvious. The question is: what did you do next?"],
+["My resources are limited","Time, effort, money, attention. All of them are limited. One of the things I hate most is realizing I invested one of them in the wrong place."],
+["Everything passes","The good passes. The bad passes. Success passes. Crises pass. The current moment, no matter how big it feels, is never the whole story."],
+["People","I respect clarity, good intentions, situational awareness, and flexibility. At work, I have very little patience for negligence, greed, lack of responsibility, or indifference."]];
+$("#lens-list").innerHTML=L.map(l=>`<h3>${l[0]}</h3><p>${l[1]}</p>`).join("");
+let c=0;const cm=()=>{$("#coins").textContent=c;$("#tmsg").textContent=c>=5?"You’re on the metro":"Not enough"};
+$("#coin").onclick=()=>{if(c<5){c++;cm()}};$("#coinr").onclick=()=>{c=0;cm()};
+$("#dgo").onclick=()=>{const v=$("#dq").value.trim().toLowerCase().replace(/\.com$/,"");$("#dres").textContent=/^[a-z0-9-]{1,63}$/.test(v)?`${v}.com — demo lookup only, no registrar connected`:"Enter a valid name (letters, numbers, hyphens)"};
+$("#em").onclick=e=>{e.target.textContent="Not published in this reconstruction"};
+$("#f").onsubmit=e=>{e.preventDefault();const d=new FormData(e.target),er=$("#err");
+if(!d.get("n").trim()||!/^\S+@\S+\.\S+$/.test(d.get("e"))||!d.get("m").trim()){er.textContent="Please fill in name, a valid email, and a message.";return}
+er.style.color="#15803d";er.textContent="Validated. (Demo: nothing was sent.)"};
+$("#theme").onclick=()=>{const r=document.documentElement,d=r.dataset.theme=="dark"||(!r.dataset.theme&&matchMedia("(prefers-color-scheme:dark)").matches);r.dataset.theme=d?"light":"dark"};
+const secs=[...document.querySelectorAll("main section[id]")],links=[...document.querySelectorAll("nav a")];
+addEventListener("scroll",()=>{let cur="home";secs.forEach(s=>{if(s.getBoundingClientRect().top<120)cur=s.id});links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")=="#"+cur))},{passive:true});
+</script></body></html>
